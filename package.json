@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha 'tests/**'",
+    "start": "node Server.js",
     "install-frontend": "cd frontend && npm install",
     "build-frontend": "cd frontend && npm run build",
     "heroku-postbuild": "npm run install-frontend && npm run build-frontend"

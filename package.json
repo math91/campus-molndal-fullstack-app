@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha 'tests/**'"
+    "test": "mocha 'tests/**'",
+    "install-frontend": "cd frontend && npm install",
+    "build-frontend": "cd frontend && npm run build",
+    "heroku-postbuild": "npm run install-frontend && npm run build-frontend"
   },
   "keywords": [
     "RestAPI"
